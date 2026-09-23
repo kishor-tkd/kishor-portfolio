@@ -1,9 +1,9 @@
+@import "./tokens.css";
+@import "./animations.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import "./tokens.css";
-@import "./animations.css";
 
 
 /* =========================================
@@ -39,6 +39,7 @@ body {
     var(--text-primary);
 
   font-family:
+    "Inter Variable",
     "Inter",
     ui-sans-serif,
     system-ui,
@@ -129,6 +130,7 @@ img {
 
 .font-technical {
   font-family:
+    "JetBrains Mono Variable",
     "JetBrains Mono",
     ui-monospace,
     SFMono-Regular,

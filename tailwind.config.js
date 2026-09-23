@@ -95,6 +95,7 @@ export default {
       fontFamily: {
 
         sans: [
+          "Inter Variable",
           "Inter",
           "ui-sans-serif",
           "system-ui",
@@ -102,6 +103,7 @@ export default {
         ],
 
         mono: [
+          "JetBrains Mono Variable",
           "JetBrains Mono",
           "ui-monospace",
           "SFMono-Regular",
