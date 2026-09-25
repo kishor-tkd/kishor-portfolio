@@ -1,0 +1,50 @@
+export const skills = {
+  sectionLabel: '02 / SYSTEM ARCHITECTURE & SKILLS',
+  title: 'Production Technologies & Tooling',
+  description: 'Carefully cultivated toolchain built for developer ergonomics, fault tolerance, and performant user interfaces.',
+  groups: [
+    {
+      id: 'languages',
+      title: 'LANGUAGES',
+      description: 'Core multi-paradigm programming foundations utilized for web APIs, distributed logic, and data analysis.',
+      items: [
+        { name: 'Python', level: 'Expert' },
+        { name: 'Java', level: 'Advanced' },
+        { name: 'JavaScript', level: 'Expert' },
+        { name: 'SQL', level: 'Advanced' },
+      ],
+      footer: 'RDBMS · OOP · FP',
+      badge: '100% Validated',
+    },
+    {
+      id: 'frameworks',
+      title: 'FRAMEWORKS & MOBILE',
+      description: 'Frontend ecosystems for building responsive web dashboards and fluid native iOS/Android experiences.',
+      items: [
+        { name: 'ReactJS', level: null },
+        { name: 'React Native', level: null },
+        { name: 'Tailwind CSS', level: null },
+        { name: 'Bootstrap', level: null },
+      ],
+      footer: 'Universal CSS · Native bridge',
+      badge: 'Mobile & Web',
+    },
+    {
+      id: 'tools',
+      title: 'TOOLS & ENVIRONMENTS',
+      description: 'Engineering workbenches, versioning workflows, interface prototyping, and compute cloud notebooks.',
+      items: [
+        { name: 'VS Code', level: null },
+        { name: 'GitHub', level: null },
+        { name: 'Jupyter', level: null },
+        { name: 'Google Colab', level: null },
+        { name: 'MongoDB Compass', level: null },
+        { name: 'Figma', level: null },
+        { name: 'Eclipse', level: null },
+        { name: 'Canva', level: null },
+      ],
+      footer: 'CI/CD · Machine Learning',
+      badge: 'Enterprise Ready',
+    },
+  ],
+}
