@@ -5,6 +5,7 @@ import { CursorGlow } from './components/effects/CursorGlow'
 import { Hero } from './sections/Hero/Hero'
 import { About } from './sections/About/About'
 import { Skills } from './sections/Skills/Skills'
+import { Experience } from './sections/Experience/Experience'
 
 import React from 'react'
 
@@ -18,6 +19,7 @@ export default function App() {
         <Hero />
         <About />
         <Skills />
+        <Experience />
       </main>
       <Footer />
     </div>
