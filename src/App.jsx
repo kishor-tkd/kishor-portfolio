@@ -2,6 +2,7 @@ import { Navbar } from './components/layout/Navbar'
 import { Footer } from './components/layout/Footer'
 import { GridBackground } from './components/effects/GridBackground'
 import { CursorGlow } from './components/effects/CursorGlow'
+import { Hero } from './sections/Hero/Hero'
 
 import React from 'react'
 
@@ -12,7 +13,7 @@ function App() {
       <CursorGlow />
       <Navbar />
       <main className="relative z-10">
-        
+        <Hero />
       </main>
       <Footer />
     </div>
