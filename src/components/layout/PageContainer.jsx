@@ -1,11 +1,14 @@
-function PageContainer({ children, className = "" }) {
+import { cn } from '../../lib/cn'
+
+export function PageContainer({ children, className }) {
   return (
     <div
-      className={`mx-auto w-full max-w-content px-margin-mobile md:px-margin ${className}`}
+      className={cn(
+        'mx-auto w-full max-w-content px-4 md:px-6 lg:px-8',
+        className
+      )}
     >
       {children}
     </div>
-  );
+  )
 }
-
-export default PageContainer;

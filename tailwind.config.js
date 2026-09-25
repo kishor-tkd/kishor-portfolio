@@ -4,371 +4,166 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-
   theme: {
     extend: {
-
       colors: {
-
-        /* =========================================
-           ENGINEERED PRECISION
-           Surface System
-        ========================================= */
-
-        canvas: "#090D16",
-
         surface: {
-          DEFAULT: "#0F131C",
-          dim: "#0F131C",
-          bright: "#353943",
-
-          lowest: "#0A0E17",
-          low: "#181B25",
-          DEFAULT_ALT: "#1C1F29",
-          high: "#262A34",
-          highest: "#31353F",
-
-          1: "#0D1117",
-          2: "#161B22",
-          overlay: "#21262D",
+          DEFAULT: '#0f131c',
+          dim: '#0f131c',
+          bright: '#353943',
+          'container-lowest': '#0a0e17',
+          'container-low': '#181b25',
+          container: '#1c1f29',
+          'container-high': '#262a34',
+          'container-highest': '#31353f',
+          variant: '#31353f',
         },
-
-
-        /* =========================================
-           TYPOGRAPHY
-        ========================================= */
-
-        ink: {
-          primary: "#F0F6FC",
-          secondary: "#C9D1D9",
-          tertiary: "#8B949E",
-          trace: "#484F58",
-
-          "on-surface": "#DFE2EF",
-          "on-surface-variant": "#BDC8D1",
+        'on-surface': {
+          DEFAULT: '#dfe2ef',
+          variant: '#bdc8d1',
         },
-
-
-        /* =========================================
-           ACCENTS
-        ========================================= */
-
-        cyan: {
-          DEFAULT: "#38BDF8",
-          light: "#8ED5FF",
-          dark: "#00668A",
-
-          container: "#38BDF8",
-          "on-container": "#004965",
+        'inverse-surface': '#dfe2ef',
+        'inverse-on-surface': '#2c303a',
+        outline: {
+          DEFAULT: '#87929a',
+          variant: '#3e484f',
         },
-
-        emerald: {
-          DEFAULT: "#10B981",
-          light: "#4EDEA3",
-          dark: "#00A572",
+        'surface-tint': '#7bd0ff',
+        primary: {
+          DEFAULT: '#8ed5ff',
+          container: '#38bdf8',
+          fixed: '#c4e7ff',
+          'fixed-dim': '#7bd0ff',
         },
-
-        indigo: {
-          DEFAULT: "#6366F1",
-          light: "#A7A9FF",
+        'on-primary': {
+          DEFAULT: '#00354a',
+          container: '#004965',
+          fixed: '#001e2c',
+          'fixed-variant': '#004c69',
         },
-
-
-        /* =========================================
-           DESIGN SYSTEM SEMANTIC COLORS
-        ========================================= */
-
-        primary: "#8ED5FF",
-        secondary: "#4EDEA3",
-        tertiary: "#C7C8FF",
-
-        error: "#FFB4AB",
-
-        background: "#0F131C",
+        'inverse-primary': '#00668a',
+        secondary: {
+          DEFAULT: '#4edea3',
+          container: '#00a572',
+          fixed: '#6ffbbe',
+          'fixed-dim': '#4edea3',
+        },
+        'on-secondary': {
+          DEFAULT: '#003824',
+          container: '#00311f',
+          fixed: '#002113',
+          'fixed-variant': '#005236',
+        },
+        tertiary: {
+          DEFAULT: '#c7c8ff',
+          container: '#a7a9ff',
+          fixed: '#e1e0ff',
+          'fixed-dim': '#c0c1ff',
+        },
+        'on-tertiary': {
+          DEFAULT: '#1000a9',
+          container: '#2b29bb',
+          fixed: '#07006c',
+          'fixed-variant': '#2f2ebe',
+        },
+        error: {
+          DEFAULT: '#ffb4ab',
+          container: '#93000a',
+        },
+        'on-error': {
+          DEFAULT: '#690005',
+          container: '#ffdad6',
+        },
+        background: '#0f131c',
+        'on-background': '#dfe2ef',
+        // Design system refined palette
+        canvas: '#090D16',
+        'surface-1': '#0D1117',
+        'surface-2': '#161B22',
+        'surface-overlay': '#21262D',
+        'hairline': 'rgba(255, 255, 255, 0.08)',
+        'hairline-interactive': 'rgba(255, 255, 255, 0.16)',
+        'accent-glow': 'rgba(56, 189, 248, 0.35)',
+        'text-primary': '#F0F6FC',
+        'text-secondary': '#C9D1D9',
+        'text-tertiary': '#8B949E',
+        'text-disabled': '#484F58',
+        'accent-cyan': '#38BDF8',
+        'accent-emerald': '#10B981',
+        'accent-indigo': '#6366F1',
       },
-
-
-      /* =========================================
-         TYPOGRAPHY
-      ========================================= */
-
       fontFamily: {
-
-        sans: [
-          "Inter Variable",
-          "Inter",
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif",
-        ],
-
-        mono: [
-          "JetBrains Mono Variable",
-          "JetBrains Mono",
-          "ui-monospace",
-          "SFMono-Regular",
-          "Menlo",
-          "Monaco",
-          "Consolas",
-          "monospace",
-        ],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        mono: ['JetBrains Mono', 'ui-monospace', 'monospace'],
       },
-
-
       fontSize: {
-
-        /* Hero */
-
-        "hero": [
-          "3.75rem",
-          {
-            lineHeight: "1.1",
-            letterSpacing: "-0.035em",
-            fontWeight: "600",
-          },
-        ],
-
-        "hero-mobile": [
-          "2.25rem",
-          {
-            lineHeight: "1.15",
-            letterSpacing: "-0.025em",
-            fontWeight: "600",
-          },
-        ],
-
-
-        /* Headlines */
-
-        "headline-lg": [
-          "2.25rem",
-          {
-            lineHeight: "1.2",
-            letterSpacing: "-0.025em",
-            fontWeight: "600",
-          },
-        ],
-
-        "headline-lg-mobile": [
-          "1.75rem",
-          {
-            lineHeight: "1.25",
-            letterSpacing: "-0.02em",
-            fontWeight: "600",
-          },
-        ],
-
-        "headline-md": [
-          "1.5rem",
-          {
-            lineHeight: "1.3",
-            letterSpacing: "-0.02em",
-            fontWeight: "500",
-          },
-        ],
-
-        "headline-sm": [
-          "1.125rem",
-          {
-            lineHeight: "1.4",
-            letterSpacing: "-0.01em",
-            fontWeight: "500",
-          },
-        ],
-
-
-        /* Body */
-
-        "body-lg": [
-          "1.125rem",
-          {
-            lineHeight: "1.6",
-            letterSpacing: "-0.01em",
-            fontWeight: "400",
-          },
-        ],
-
-        "body-md": [
-          "0.9375rem",
-          {
-            lineHeight: "1.6",
-            letterSpacing: "-0.005em",
-            fontWeight: "400",
-          },
-        ],
-
-        "body-sm": [
-          "0.8125rem",
-          {
-            lineHeight: "1.5",
-            letterSpacing: "0",
-            fontWeight: "400",
-          },
-        ],
-
-
-        /* Code */
-
-        "code-inline": [
-          "0.875rem",
-          {
-            lineHeight: "1.4",
-            letterSpacing: "-0.01em",
-            fontWeight: "400",
-          },
-        ],
-
-        "code-block": [
-          "0.8125rem",
-          {
-            lineHeight: "1.7",
-            letterSpacing: "0",
-            fontWeight: "400",
-          },
-        ],
-
-        "label-code": [
-          "0.75rem",
-          {
-            lineHeight: "1.2",
-            letterSpacing: "0.04em",
-            fontWeight: "500",
-          },
-        ],
-
-        "label-ui": [
-          "0.75rem",
-          {
-            lineHeight: "1.2",
-            letterSpacing: "0.01em",
-            fontWeight: "500",
-          },
-        ],
+        'hero': ['3.75rem', { lineHeight: '1.1', letterSpacing: '-0.035em', fontWeight: '600' }],
+        'hero-mobile': ['2.25rem', { lineHeight: '1.15', letterSpacing: '-0.025em', fontWeight: '600' }],
+        'headline-lg': ['2.25rem', { lineHeight: '1.2', letterSpacing: '-0.025em', fontWeight: '600' }],
+        'headline-lg-mobile': ['1.75rem', { lineHeight: '1.25', letterSpacing: '-0.02em', fontWeight: '600' }],
+        'headline-md': ['1.5rem', { lineHeight: '1.3', letterSpacing: '-0.02em', fontWeight: '500' }],
+        'headline-sm': ['1.125rem', { lineHeight: '1.4', letterSpacing: '-0.01em', fontWeight: '500' }],
+        'body-lg': ['1.125rem', { lineHeight: '1.6', letterSpacing: '-0.01em', fontWeight: '400' }],
+        'body-md': ['0.9375rem', { lineHeight: '1.6', letterSpacing: '-0.005em', fontWeight: '400' }],
+        'body-sm': ['0.8125rem', { lineHeight: '1.5', letterSpacing: '0em', fontWeight: '400' }],
+        'code-inline': ['0.875rem', { lineHeight: '1.4', letterSpacing: '-0.01em', fontWeight: '400' }],
+        'code-block': ['0.8125rem', { lineHeight: '1.7', letterSpacing: '0em', fontWeight: '400' }],
+        'label-code': ['0.75rem', { lineHeight: '1.2', letterSpacing: '0.04em', fontWeight: '500' }],
+        'label-ui': ['0.75rem', { lineHeight: '1.2', letterSpacing: '0.01em', fontWeight: '500' }],
       },
-
-
-      /* =========================================
-         RADIUS
-      ========================================= */
-
       borderRadius: {
-
-        micro: "0.25rem",
-        sm: "0.25rem",
-        DEFAULT: "0.25rem",
-        md: "0.375rem",
-        lg: "0.5rem",
-        xl: "0.75rem",
-        full: "9999px",
+        sm: '0.125rem',
+        DEFAULT: '0.25rem',
+        md: '0.375rem',
+        lg: '0.5rem',
+        xl: '0.75rem',
+        full: '9999px',
       },
-
-
-      /* =========================================
-         SPACING
-      ========================================= */
-
       spacing: {
-
-        gutter: "1.5rem",
-        "gutter-mobile": "1rem",
-
-        margin: "2rem",
-        "margin-mobile": "1rem",
-
-        "space-xs": "0.25rem",
-        "space-sm": "0.5rem",
-        "space-md": "1rem",
-        "space-lg": "1.5rem",
-        "space-xl": "2.5rem",
-        "space-2xl": "4rem",
+        'gutter': '1.5rem',
+        'gutter-mobile': '1rem',
+        'margin': '2rem',
+        'margin-mobile': '1rem',
+        'space-xs': '0.25rem',
+        'space-sm': '0.5rem',
+        'space-md': '1rem',
+        'space-lg': '1.5rem',
+        'space-xl': '2.5rem',
+        'space-2xl': '4rem',
       },
-
-
-      /* =========================================
-         MAX WIDTH
-      ========================================= */
-
       maxWidth: {
-        content: "1200px",
+        'content': '1200px',
       },
-
-
-      /* =========================================
-         GRID
-      ========================================= */
-
-      gridTemplateColumns: {
-
-        "desktop-12":
-          "repeat(12, minmax(0, 1fr))",
-
-        "tablet-8":
-          "repeat(8, minmax(0, 1fr))",
-
-        "mobile-4":
-          "repeat(4, minmax(0, 1fr))",
-      },
-
-
-      /* =========================================
-         GAPS
-      ========================================= */
-
-      gap: {
-        grid: "1.5rem",
-        "grid-tablet": "1.25rem",
-        "grid-mobile": "1rem",
-      },
-
-
-      /* =========================================
-         BOX SHADOWS
-      ========================================= */
-
       boxShadow: {
-
-        "card-inset":
-          "inset 0 1px 0 0 rgba(255, 255, 255, 0.06)",
-
-        "primary-glow":
-          "0 0 12px rgba(240, 246, 252, 0.2)",
-
-        "cyan-ring":
-          "0 0 0 3px rgba(56, 189, 248, 0.15)",
-
-        "overlay":
-          "0 12px 32px -8px rgba(0, 0, 0, 0.6)",
-
-        "telemetry-cyan":
-          "0 0 8px rgba(56, 189, 248, 0.4)",
-
-        "telemetry-emerald":
-          "0 0 8px rgba(16, 185, 129, 0.4)",
+        'card': 'inset 0 1px 0 0 rgba(255, 255, 255, 0.06)',
+        'overlay': '0 12px 32px -8px rgba(0, 0, 0, 0.6)',
+        'primary-glow': '0 0 12px rgba(240, 246, 252, 0.2)',
+        'focus-ring': '0 0 0 3px rgba(56, 189, 248, 0.15)',
       },
-
-
-      /* =========================================
-         BACKDROP
-      ========================================= */
-
       backdropBlur: {
-        card: "12px",
-        overlay: "16px",
+        card: '12px',
+        overlay: '16px',
       },
-
-
-      /* =========================================
-         TRANSITIONS
-      ========================================= */
-
-      transitionTimingFunction: {
-
-        precision:
-          "cubic-bezier(0.22, 1, 0.36, 1)",
+      animation: {
+        'pulse-beacon': 'pulse-beacon 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'fade-in': 'fade-in 0.5s ease-out',
+        'slide-up': 'slide-up 0.5s ease-out',
       },
-
+      keyframes: {
+        'pulse-beacon': {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0.5' },
+        },
+        'fade-in': {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        'slide-up': {
+          '0%': { opacity: '0', transform: 'translateY(10px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
     },
   },
-
   plugins: [],
-};
+}

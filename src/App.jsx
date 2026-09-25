@@ -1,19 +1,20 @@
-import Navbar from "./components/layout/Navbar";
-import PageContainer from "./components/layout/PageContainer";
-import Hero from "./sections/Hero/Hero";
+import { Navbar } from './components/layout/Navbar'
+import { Footer } from './components/layout/Footer'
+import { GridBackground } from './components/effects/GridBackground'
+import { CursorGlow } from './components/effects/CursorGlow'
 
 import React from 'react'
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#0F131C] text-ink-primary">
+    <div className="relative min-h-screen bg-canvas">
+      <GridBackground />
+      <CursorGlow />
       <Navbar />
-
-      <main>
-        <PageContainer>
-          <Hero />
-        </PageContainer>
+      <main className="relative z-10">
+        
       </main>
+      <Footer />
     </div>
   )
 }
