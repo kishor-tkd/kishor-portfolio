@@ -1,234 +1,72 @@
-@import "./tokens.css";
-@import "./animations.css";
+@import './tokens.css';
+@import './animations.css';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
 
-/* =========================================
-   GLOBAL RESET
-========================================= */
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+  body {
+    @apply bg-canvas text-text-primary font-sans;
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: rgba(56, 189, 248, 0.3);
+    color: #F0F6FC;
+  }
+
+  /* Tabular nums for metrics */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
 }
 
+@layer components {
+  .card-surface {
+    background: rgba(22, 27, 34, 0.75);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 0.75rem;
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.06);
+  }
 
-html {
-  scroll-behavior: smooth;
+  .card-surface:hover {
+    border-color: rgba(56, 189, 248, 0.3);
+  }
+
+  .glass-panel {
+    background: rgba(33, 38, 45, 0.9);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.6);
+  }
+
+  .hairline-border {
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .section-label {
+    @apply font-mono text-label-code text-text-tertiary uppercase tracking-widest;
+  }
 }
 
-
-html,
-body,
-#root {
-  min-height: 100%;
-}
-
-
-body {
-  margin: 0;
-
-  background:
-    var(--canvas);
-
-  color:
-    var(--text-primary);
-
-  font-family:
-    "Inter Variable",
-    "Inter",
-    ui-sans-serif,
-    system-ui,
-    sans-serif;
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-
-/* =========================================
-   SELECTION
-========================================= */
-
-::selection {
-  background: rgba(56, 189, 248, 0.25);
-  color: var(--text-primary);
-}
-
-
-/* =========================================
-   SCROLLBAR
-========================================= */
-
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--canvas);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--surface-2);
-  border: 1px solid var(--border-subtle);
-  border-radius: 9999px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--surface-overlay);
-}
-
-
-/* =========================================
-   LINKS
-========================================= */
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-
-/* =========================================
-   BUTTONS / INPUTS
-========================================= */
-
-button,
-input,
-textarea,
-select {
-  font: inherit;
-}
-
-
-/* =========================================
-   IMAGE
-========================================= */
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
-
-/* =========================================
-   TABULAR NUMBERS
-========================================= */
-
-.tabular-nums {
-  font-variant-numeric: tabular-nums;
-}
-
-
-/* =========================================
-   TECHNICAL MONOSPACE
-========================================= */
-
-.font-technical {
-  font-family:
-    "JetBrains Mono Variable",
-    "JetBrains Mono",
-    ui-monospace,
-    SFMono-Regular,
-    Menlo,
-    Monaco,
-    Consolas,
-    monospace;
-}
-
-
-/* =========================================
-   MASTER CONTAINER
-========================================= */
-
-.container-portfolio {
-  width: 100%;
-  max-width: var(--layout-max-width);
-  margin-inline: auto;
-  padding-inline: var(--desktop-margin);
-}
-
-
-/* =========================================
-   SECTION
-========================================= */
-
-.portfolio-section {
-  width: 100%;
-  padding-block: var(--space-2xl);
-}
-
-
-/* =========================================
-   CARD BASE
-========================================= */
-
-.engineered-card {
-  position: relative;
-
-  background:
-    var(--glass-card);
-
-  border:
-    1px solid var(--border-subtle);
-
-  border-radius:
-    var(--radius-container);
-
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.06);
-
-  backdrop-filter:
-    blur(12px);
-
-  -webkit-backdrop-filter:
-    blur(12px);
-}
-
-
-/* =========================================
-   CARD HOVER
-========================================= */
-
-.engineered-card-interactive {
-  transition:
-    border-color 180ms ease,
-    background-color 180ms ease,
-    transform 180ms ease;
-}
-
-.engineered-card-interactive:hover {
-  border-color:
-    rgba(56, 189, 248, 0.3);
-}
-
-
-/* =========================================
-   HAIRLINE
-========================================= */
-
-.hairline {
-  border-color:
-    var(--border-subtle);
-}
-
-
-/* =========================================
-   STATUS BEACON
-========================================= */
-
-.status-beacon {
-  width: 6px;
-  height: 6px;
-
-  border-radius: 9999px;
-
-  background: var(--accent-emerald);
-
-  box-shadow:
-    0 0 8px rgba(16, 185, 129, 0.4);
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
 }
