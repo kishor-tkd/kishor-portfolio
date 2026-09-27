@@ -18,7 +18,7 @@ export const projects = {
       tech: ['React Native', 'Tailwind CSS', 'Node.js'],
       links: [
         { label: 'app.sampathacademy.in', href: 'https://app.sampathacademy.in/' },
-        { label: 'Play Store App', href: '#' },
+        { label: 'Play Store App', href: 'https://play.google.com/store/apps/details?id=com.sampathacademy.sapscholar&hl=en_IN' },
       ],
       architecture: {
         problem: 'Inconsistent administrative tools and fragmented student course analytics leading to high drop-off and manual operational friction.',
