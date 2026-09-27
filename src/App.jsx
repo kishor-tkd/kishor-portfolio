@@ -7,6 +7,7 @@ import { About } from './sections/About/About'
 import { Skills } from './sections/Skills/Skills'
 import { Experience } from './sections/Experience/Experience'
 import { Projects } from './sections/Projects/Projects'
+import { Education } from './sections/Education/Education'
 
 import React from 'react'
 
@@ -22,6 +23,7 @@ export default function App() {
         <Skills />
         <Experience />
         <Projects />
+        <Education />
       </main>
       <Footer />
     </div>
