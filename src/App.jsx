@@ -8,8 +8,8 @@ import { Skills } from './sections/Skills/Skills'
 import { Experience } from './sections/Experience/Experience'
 import { Projects } from './sections/Projects/Projects'
 import { Education } from './sections/Education/Education'
+import { Contact } from './sections/Contact/Contact'
 
-import React from 'react'
 
 export default function App() {
   return (
@@ -24,6 +24,7 @@ export default function App() {
         <Experience />
         <Projects />
         <Education />
+        <Contact />
       </main>
       <Footer />
     </div>
