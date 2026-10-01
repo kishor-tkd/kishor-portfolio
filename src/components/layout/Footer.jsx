@@ -1,4 +1,4 @@
-import { SITE } from '../../lib/constants'
+
 import { PageContainer } from './PageContainer'
 
 export function Footer() {
